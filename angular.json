@@ -27,8 +27,16 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/profile_picture.png"
+              {
+                "glob": "**/*",
+                "input": "src/assets/",
+                "output": "/assets/"
+              },
+              {
+                "glob": "favicon.ico",
+                "input": "src/",
+                "output": "/"
+              }
             ],
             "styles": [
               "src/styles.scss"
@@ -95,8 +103,16 @@
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/favicon.ico",
-              "src/assets/profile_picture.png"
+              {
+                "glob": "**/*",
+                "input": "src/assets/",
+                "output": "/assets/"
+              },
+              {
+                "glob": "favicon.ico",
+                "input": "src/",
+                "output": "/"
+              }
             ],
             "styles": [
               "src/styles.scss"
